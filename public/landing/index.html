@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Resolve css/, js/, img/ relative to /landing/ when served from Next.js public/ -->
+    <base href="/landing/" />
+    <title>Homepage | Navaro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link rel="stylesheet" href="/landing/css/main.css" />
+  </head>
+  <body>
+    
+    <!-- Header Start -->
+    <header class="siteheader">
+      <div class="container">
+        <div class="row">          
+          <div class="humburgurmenu" style="display: none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+            <path d="M0.713794 0.714844H17.8567H0.713794ZM0.710938 6.42913H17.8495H0.710938ZM0.713794 12.1434H17.8495H0.713794Z" fill="#080707"/>
+            <path d="M0.713794 0.714844H17.8567M0.710938 6.42913H17.8495M0.713794 12.1434H17.8495" stroke="#080707" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="menuwrapper">
+            <div class="closemenu" style="display: none;">
+              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+              </svg>
+            </div>
+            <div class="menuwrapperinner">
+              <div class="menuwrap">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/course">NavLearn</a></li>
+                  <li><a href="/dashboard">NavTools</a></li>
+                  <li><a href="/navfinance">NavFinance</a></li>
+                  <li><a href="/about">About</a></li>
+                </ul>
+                <div class="mobile-menu-buttons">
+                  <a href="/dashboard" class="mobile-getstarted-btn">Get Started</a>
+                  <!-- <a href="/login" class="mobile-login-btn">Login / Signup</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="logo logo-center">
+            <a href="/">
+              <img src="/image/Nav_bar-.png" alt="Navaro Logo" />
+            </a>
+          </div>
+          <div class="buttonwrap">
+            <a href="/dashboard">
+              <span>
+                Get Started
+              </span>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path d="M10.5 4.375L16.625 10.5M16.625 10.5L10.5 16.625M16.625 10.5H4.375" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <!-- <a href="/login" class="login-signup-btn">Login / Signup</a> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="bordersepleftright" style="display:none;"></div>
+
+    <!-- Banner Start -->
+    <div class="mainbanner">
+      <div class="container">
+        <div class="bannercontent">
+          <div class="bannercontentinner">
+            <h1>We make import export easy.</h1>
+            <p>Your all-in-one platform to learn, plan, and ship — without the confusion.</p>
+            <div class="explorecourse">
+              <a href="/" class="btn">
+                Explore our Courses
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3 7L10 10L17 7" stroke="black" stroke-width="1.56863" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 18V10" stroke="black" stroke-width="1.56863" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.27503 2.06706L3.82503 4.53373C2.8167 5.09206 1.9917 6.49206 1.9917 7.64206V12.3504C1.9917 13.5004 2.8167 14.9004 3.82503 15.4587L8.27503 17.9337C9.22503 18.4587 10.7834 18.4587 11.7334 17.9337L16.1834 15.4587C17.1917 14.9004 18.0167 13.5004 18.0167 12.3504V7.64206C18.0167 6.49206 17.1917 5.09206 16.1834 4.53373L11.7334 2.05873C10.775 1.53373 9.22503 1.53373 8.27503 2.06706Z" stroke="black" stroke-width="1.56863" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/dashboard" class="btn whitebtn">Learn about Tools</a>
+            </div>
+          </div>
+        </div>
+                <div class="bannervideowrap">
+          <video playsinline="" autoplay="" loop="" muted="" preload="metadata" poster="" class="video" alt="">
+            <source src="img/Radar2.mp4" type="video/mp4">
+          </video>
+          <!-- Problem popup cards -->
+          <a href="/course" class="navpopup navpopup-tl">
+            <span class="navpopup-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+            <span class="navpopup-text"><strong>Don't know where to start?</strong><br>Learn trade from scratch</span>
+          </a>
+          <a href="/dashboard" class="navpopup navpopup-tr">
+            <span class="navpopup-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+            <span class="navpopup-text"><strong>Not sure about costs?</strong><br>Calculate duties & CBM free</span>
+          </a>
+          <a href="/navfinance" class="navpopup navpopup-bl">
+            <span class="navpopup-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+            <span class="navpopup-text"><strong>Document errors at customs?</strong><br>Check with AI instantly</span>
+          </a>
+          <a href="/dashboard" class="navpopup navpopup-br">
+            <span class="navpopup-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z"/></svg></span>
+            <span class="navpopup-text"><strong>Need cargo insurance?</strong><br>Get covered with NavFinance</span>
+          </a>
+        </div>
+      </div>
+      <div class="blurbg" style="background: #FEFAF4;filter: blur(23.799999237060547px);"> style="background: #FEFAF4;filter: blur(23.799999237060547px);"></div>
+    </div>
+    <!-- Banner End -->
+
+    
+    <!-- One Platform Start -->
+    <div class="ourstakholderssec" style="background-image: url('img/Texture.png');"> 
+      <div class="ourstakholderssecinnr">
+        <div class="titlebox text-center ">
+          <h6>THE PRODUCTS THAT HELP YOU SCALE</h6>
+          <h2>Everything you need to ship in one platform</h2>
+          <p>Whether you're placing your first order or your fiftieth, Navaro keeps your learning and your tools in one place - so you always know what comes next.</p>
+        </div>
+        <div class="stackholdersliderdesktop">
+          <div class="pin-wrapper" id="pinWrapper">
+            <div class="pin-stager" id="stager">
+
+              <div class="card card-1 stackholderslide" id="c1">
+                <div class="slideinnr">
+                  <div class="topcontent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                      <path d="M34.8215 28H13.8215C12.194 28 11.3802 28 10.7117 28.1785C9.82154 28.4172 9.00987 28.8861 8.35831 29.5379C7.70676 30.1898 7.23829 31.0017 7 31.892" stroke="black" stroke-width="3"/>
+                      <path d="M14 12.25H28M14 18.375H22.75M17.5 38.5C12.551 38.5 10.0748 38.5 8.53825 36.9618C7 35.4253 7 32.949 7 28V14C7 9.051 7 6.57475 8.53825 5.03825C10.0748 3.5 12.551 3.5 17.5 3.5H24.5C29.449 3.5 31.9253 3.5 33.4618 5.03825C35 6.57475 35 9.051 35 14M24.5 38.5C29.449 38.5 31.9253 38.5 33.4618 36.9618C35 35.4253 35 32.949 35 28V21" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Courses you need</h3>
+                    <p>Structured, certification-backed courses that take you from zero knowledge to your first real shipment.</p>
+                  </div>
+                  <div class="middleimage">
+                    <img src="img/frame1.png" alt="Navaro certification course module">
+                  </div>
+                  <div class="bottomcontent">
+                    <a href="/dashboard" class="btn whitebtn">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-2 stackholderslide" id="c2">
+                <div class="slideinnr">
+                  <div class="topcontent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                      <g clip-path="url(#clip0_920_131)">
+                      <path d="M17.714 16.6835L6.41127 21.0222C6.11409 21.1361 5.84227 21.3074 5.61135 21.5264C5.38044 21.7454 5.19496 22.0078 5.06551 22.2986C4.93606 22.5893 4.86519 22.9027 4.85695 23.2209C4.84871 23.539 4.90326 23.8557 5.01747 24.1527C5.24769 24.7522 5.70658 25.2357 6.29322 25.4969C6.87987 25.7581 7.54623 25.7756 8.14577 25.5455L19.4495 21.2046M24.043 23.7335L26.4228 29.9332C26.6529 30.5328 26.6354 31.1991 26.3742 31.7858C26.113 32.3724 25.6295 32.8313 25.03 33.0615C24.4305 33.2916 23.7641 33.2741 23.1775 33.0129C22.5908 32.7517 22.1319 32.2682 21.9017 31.6687L18.0909 21.7435M16.3611 9.84742L13.6649 9.5828L13.0608 4.62831L15.3214 3.76057L18.1882 7.8483L16.3611 9.84742ZM16.3611 9.84742L18.0978 14.3717" stroke="black" stroke-width="1.81631" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M17.7144 16.6841C17.8411 13.8868 19.415 10.8431 22.1967 9.7753C24.9784 8.7075 28.7169 9.86699 30.149 11.9109L25.289 13.7765L23.4438 17.0785L27.024 18.2987L31.8845 16.432C32.1885 18.9108 30.185 22.2735 27.4038 23.3402C24.6221 24.408 21.4169 23.1997 19.451 21.2057" stroke="black" stroke-width="1.81631" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_920_131">
+                      <rect width="29.061" height="29.061" fill="white" transform="translate(11.8203) rotate(24)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <h3>Tools that help</h3>
+                    <p>Free calculators and checkers for costs, container space, and paperwork - built to catch errors before customs does.</p>
+                  </div>
+                  <div class="middleimage">
+                    <img src="img/frame2.png" alt="Navaro shipping tools dashboard">
+                  </div>
+                  <div class="bottomcontent">
+                    <a href="/dashboard" class="btn whitebtn">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-3 stackholderslide" id="c3">
+                <div class="slideinnr">
+                  <div class="topcontent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                      <path d="M34.8215 28H13.8215C12.194 28 11.3802 28 10.7117 28.1785C9.82154 28.4172 9.00987 28.8861 8.35831 29.5379C7.70676 30.1898 7.23829 31.0017 7 31.892" stroke="black" stroke-width="3"/>
+                      <path d="M14 12.25H28M14 18.375H22.75M17.5 38.5C12.551 38.5 10.0748 38.5 8.53825 36.9618C7 35.4253 7 32.949 7 28V14C7 9.051 7 6.57475 8.53825 5.03825C10.0748 3.5 12.551 3.5 17.5 3.5H24.5C29.449 3.5 31.9253 3.5 33.4618 5.03825C35 6.57475 35 9.051 35 14M24.5 38.5C29.449 38.5 31.9253 38.5 33.4618 36.9618C35 35.4253 35 32.949 35 28V21" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Grow with confidence</h3>
+                    <p>Move beyond your first shipment with resources built for scaling - repeat orders, new markets, and stronger margins.</p>
+                  </div>
+                  <div class="middleimage">
+                    <img src="img/frame1.png" alt="Scaling your export business with Navaro">
+                  </div>
+                  <div class="bottomcontent">
+                    <a href="/dashboard" class="btn whitebtn">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="stackholderslidermobile" style="display: none;">
+          <div class="stackholderslider">
+            <div class="stackholderslide">
+              <div class="slideinnr"  style="background-color: #9EE4D7;">
+                <div class="topcontent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                    <path d="M34.8215 28H13.8215C12.194 28 11.3802 28 10.7117 28.1785C9.82154 28.4172 9.00987 28.8861 8.35831 29.5379C7.70676 30.1898 7.23829 31.0017 7 31.892" stroke="black" stroke-width="3"/>
+                    <path d="M14 12.25H28M14 18.375H22.75M17.5 38.5C12.551 38.5 10.0748 38.5 8.53825 36.9618C7 35.4253 7 32.949 7 28V14C7 9.051 7 6.57475 8.53825 5.03825C10.0748 3.5 12.551 3.5 17.5 3.5H24.5C29.449 3.5 31.9253 3.5 33.4618 5.03825C35 6.57475 35 9.051 35 14M24.5 38.5C29.449 38.5 31.9253 38.5 33.4618 36.9618C35 35.4253 35 32.949 35 28V21" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                  <h3>Grow with confidence</h3>
+                  <p>Move beyond your first shipment with resources built for scaling - repeat orders, new markets, and stronger margins.</p>
+                </div>
+                <div class="middleimage">
+                  <img src="img/frame1.png" alt="Scaling your export business with Navaro">
+                </div>
+                <div class="bottomcontent">
+                  <a href="/dashboard" class="btn whitebtn">Learn more</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="stackholderslide">
+              <div class="slideinnr" style="background: #F9DB5F;">
+                <div class="topcontent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                    <g clip-path="url(#clip0_920_131)">
+                    <path d="M17.714 16.6835L6.41127 21.0222C6.11409 21.1361 5.84227 21.3074 5.61135 21.5264C5.38044 21.7454 5.19496 22.0078 5.06551 22.2986C4.93606 22.5893 4.86519 22.9027 4.85695 23.2209C4.84871 23.539 4.90326 23.8557 5.01747 24.1527C5.24769 24.7522 5.70658 25.2357 6.29322 25.4969C6.87987 25.7581 7.54623 25.7756 8.14577 25.5455L19.4495 21.2046M24.043 23.7335L26.4228 29.9332C26.6529 30.5328 26.6354 31.1991 26.3742 31.7858C26.113 32.3724 25.6295 32.8313 25.03 33.0615C24.4305 33.2916 23.7641 33.2741 23.1775 33.0129C22.5908 32.7517 22.1319 32.2682 21.9017 31.6687L18.0909 21.7435M16.3611 9.84742L13.6649 9.5828L13.0608 4.62831L15.3214 3.76057L18.1882 7.8483L16.3611 9.84742ZM16.3611 9.84742L18.0978 14.3717" stroke="black" stroke-width="1.81631" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.7144 16.6841C17.8411 13.8868 19.415 10.8431 22.1967 9.7753C24.9784 8.7075 28.7169 9.86699 30.149 11.9109L25.289 13.7765L23.4438 17.0785L27.024 18.2987L31.8845 16.432C32.1885 18.9108 30.185 22.2735 27.4038 23.3402C24.6221 24.408 21.4169 23.1997 19.451 21.2057" stroke="black" stroke-width="1.81631" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_920_131">
+                    <rect width="29.061" height="29.061" fill="white" transform="translate(11.8203) rotate(24)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                  <h3>Tools that help</h3>
+                  <p>Free calculators and checkers for costs, container space, and paperwork - built to catch errors before customs does.</p>
+                </div>
+                <div class="middleimage">
+                  <img src="img/frame2.png" alt="Navaro shipping tools dashboard">
+                </div>
+                <div class="bottomcontent">
+                  <a href="/dashboard" class="btn whitebtn">Learn more</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="stackholderslide">
+              <div class="slideinnr" style="background: #ff9800;">
+                <div class="topcontent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                    <path d="M34.8215 28H13.8215C12.194 28 11.3802 28 10.7117 28.1785C9.82154 28.4172 9.00987 28.8861 8.35831 29.5379C7.70676 30.1898 7.23829 31.0017 7 31.892" stroke="black" stroke-width="3"/>
+                    <path d="M14 12.25H28M14 18.375H22.75M17.5 38.5C12.551 38.5 10.0748 38.5 8.53825 36.9618C7 35.4253 7 32.949 7 28V14C7 9.051 7 6.57475 8.53825 5.03825C10.0748 3.5 12.551 3.5 17.5 3.5H24.5C29.449 3.5 31.9253 3.5 33.4618 5.03825C35 6.57475 35 9.051 35 14M24.5 38.5C29.449 38.5 31.9253 38.5 33.4618 36.9618C35 35.4253 35 32.949 35 28V21" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                  <h3>Grow with confidence</h3>
+                  <p>Move beyond your first shipment with resources built for scaling - repeat orders, new markets, and stronger margins.</p>
+                </div>
+                <div class="middleimage">
+                  <img src="img/frame1.png" alt="Scaling your export business with Navaro">
+                </div>
+                <div class="bottomcontent">
+                  <a href="/dashboard" class="btn whitebtn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- One Platform End -->
+
+        <!-- 4E's Section Start -->
+    <div class="stepsguidesec">
+      <div class="container">
+        <div class="titlebox">
+          <h6>WHY NAVARO</h6>
+          <h2>The 4E's of the platform</h2>
+          <p>Everything you need, built around four simple stages of your trade journey.</p>
+        </div>
+        <div class="row">
+          <div class="col-third">
+            <div class="col-inner" style="background-color: #DCB7EB;">
+              <div class="setpguidbox">
+                <h6>01</h6>
+                <h4>Explore</h4>
+                <ul class="fourelist">
+                  <li>Understand how global trade works</li>
+                  <li>Discover the right markets for your product</li>
+                  <li>Learn what documents and steps are involved</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-third">
+            <div class="col-inner" style="background-color: #FBEBA9;">
+              <div class="setpguidbox">
+                <h6>02</h6>
+                <h4>Evaluate</h4>
+                <ul class="fourelist">
+                  <li>Calculate duties, landed costs, and container space</li>
+                  <li>Check compliance before you commit</li>
+                  <li>Know the true cost of your shipment upfront</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-third">
+            <div class="col-inner" style="background-color: #9EE4D7;">
+              <div class="setpguidbox">
+                <h6>03</h6>
+                <h4>Execute</h4>
+                <ul class="fourelist">
+                  <li>Prepare and verify all export documents</li>
+                  <li>Coordinate with partners and freight forwarders</li>
+                  <li>Ship your first order with confidence</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-third">
+            <div class="col-inner" style="background-color: #054742;">
+              <div class="setpguidbox">
+                <h6 style="color:#FFFBF3;">04</h6>
+                <h4 style="color:#FFFBF3;">Experience</h4>
+                <ul class="fourelist" fourelist-light>
+                  <li>Build repeat orders and expand to new markets</li>
+                  <li>Grow your network with verified partners</li>
+                  <li>Run a fully operational import-export business</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4E's Section End -->
+
+    
+
+            <!-- Who Navaro is for Start -->
+    <div class="whonavarosec">
+      <div class="container">
+        <div class="titlebox">
+          <h6>WHO IT IS FOR</h6>
+          <h2>Who Navaro is for</h2>
+          <p>Navaro is built for three types of traders.</p>
+        </div>
+        <div class="row who-row">
+          <div class="col-third who-col">
+            <div class="col-inner who-card" style="background-color: #054742;">
+              <div class="setpguidbox">
+                <h6 class="who-num">01</h6>
+                <h4 class="who-title">Students &amp; Aspiring Exporters</h4>
+                <ul class="fourelist fourelist-light">
+                  <li>Learn import-export from zero, no experience needed</li>
+                  <li>Get certified and unlock integrated tools as you progress</li>
+                  <li>Build confidence to ship your first order independently</li>
+                </ul>
+                <a href="/course" class="who-btn who-btn-light">Start Your Journey</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-third who-col">
+            <div class="col-inner who-card" style="background-color: #DCB7EB;">
+              <div class="setpguidbox">
+                <h6 class="who-num">02</h6>
+                <h4 class="who-title">Solopreneurs &amp; New Exporters</h4>
+                <ul class="fourelist">
+                  <li>Understand compliance, documentation, and cost planning</li>
+                  <li>Calculate duties, landed costs, and container space</li>
+                  <li>Avoid costly errors with AI-powered document checking</li>
+                </ul>
+                <a href="/dashboard" class="who-btn who-btn-light">Explore Courses &amp; Tools</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-third who-col">
+            <div class="col-inner who-card" style="background-color: #FBEBA9;">
+              <div class="setpguidbox">
+                <h6 class="who-num">03</h6>
+                <h4 class="who-title">New IEC Registrations</h4>
+                <ul class="fourelist">
+                  <li>Get compliant fast with step-by-step guidance</li>
+                  <li>Learn customs, duties, and documentation from module 1</li>
+                  <li>Track shipments and manage logistics with confidence</li>
+                </ul>
+                <a href="/dashboard" class="who-btn who-btn-light">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-third who-col">
+            <div class="col-inner who-card" style="background-color: #9EE4D7;">
+              <div class="setpguidbox">
+                <h6 class="who-num">04</h6>
+                <h4 class="who-title">Working Professionals</h4>
+                <ul class="fourelist">
+                  <li>Formalize on-the-job knowledge with certification</li>
+                  <li>Streamline workflows with integrated shipping tools</li>
+                  <li>Reduce document errors and save time on repetitive tasks</li>
+                </ul>
+                <a href="/" class="who-btn who-btn-light">Upskill Your Career</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Who Navaro is for End -->
+
+        
+
+        <!-- Try Navaro Tools Start -->
+    <div class="trynavarotools">
+      <div class="container">
+        <div class="titlebox">
+          <h2>Try Navaro Tools</h2>
+          <p>No sign-up required. Start using free.</p>
+        </div>
+        <div class="row toolctarow">
+          <div class="col-third toolctacard">
+            <div class="toolctainner" style="background-color: #DCB7EB;">
+              <img src="img/cbm-calc.png" alt="CBM Calculator">
+              <h4>Calculate your CBM now</h4>
+              <p>Know exactly how much space your cargo takes.</p>
+              <a href="/dashboard" class="btn">Try CBM Calculator</a>
+            </div>
+          </div>
+          <div class="col-third toolctacard">
+            <div class="toolctainner" style="background-color: #FBEBA9;">
+              <img src="img/lcc-calc.png" alt="Landed Cost Calculator">
+              <h4>Save money on every shipment</h4>
+              <p>See the real landed cost before you commit.</p>
+              <a href="/dashboard" class="btn">Try Landed Cost Calculator</a>
+            </div>
+          </div>
+          <div class="col-third toolctacard">
+            <div class="toolctainner" style="background-color: #9EE4D7;">
+              <img src="img/aidac.png" alt="AI Document Checker">
+              <h4>Check mistakes in your documents</h4>
+              <p>Catch errors before customs does.</p>
+              <a href="/dashboard" class="btn">Try AI Document Checker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Try Navaro Tools End -->
+
+        <!-- Real outcomes from real exporters Start -->
+    <div class="realcustomersec">
+      <div class="container">
+        <div class="titlebox">
+          <h2>Real outcomes from real exporters</h2>
+          <p>Trusted by hundreds of exporters, students, and trade professionals across India</p>
+        </div>
+      </div>
+      <div class="realcustomersliderinner">
+        <div class="realcustomerslider">
+          <div class="realcustomerslide">
+            <div class="customerslideinner review-short">
+              <p class="review-text">"Navaro completely changed how I approach export. Before, I was guessing at duties and scrambling through document checklists. With Navaro, I had a clear step-by-step path from my first lesson to my first shipment. The courses are practical and the tools are built into the same platform, so I never had to go elsewhere. I felt prepared, not overwhelmed."</p>
+              <button class="review-expand-btn" onclick="var p=this.previousElementSibling;p.classList.toggle('expanded');this.textContent=p.classList.contains('expanded')?'Read less':'Read more';">Read more</button>
+              <div class="info">
+                
+                <div class="infocontent">
+                  <h6>Arjun Mehta</h6>
+                  <p>First-time exporter, Mumbai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="realcustomerslide">
+            <div class="customerslideinner review-short">
+              <p class="review-text">"I used the CBM calculator before confirming my container booking and saved myself from a costly mistake. I had overestimated the space I needed by almost 20%. The tool is straightforward, accurate, and completely free to use. I now run the numbers through it before every shipment. One of those tools that pays for itself the first time you use it."</p>
+              <button class="review-expand-btn" onclick="var p=this.previousElementSibling;p.classList.toggle('expanded');this.textContent=p.classList.contains('expanded')?'Read less':'Read more';">Read more</button>
+              <div class="info">
+                
+                <div class="infocontent">
+                  <h6>Priya Sharma</h6>
+                  <p>Solopreneur, Delhi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="realcustomerslide">
+            <div class="customerslideinner review-short">
+              <p class="review-text">"The AI Document Checker found two errors in my commercial invoice that I would have missed entirely. One was a formatting issue with the HS code, the other was a missing field in the packing list. Both could have caused a customs delay. I now run every export document through it before submission. Genuinely useful, not just a gimmick."</p>
+              <button class="review-expand-btn" onclick="var p=this.previousElementSibling;p.classList.toggle('expanded');this.textContent=p.classList.contains('expanded')?'Read less':'Read more';">Read more</button>
+              <div class="info">
+                
+                <div class="infocontent">
+                  <h6>Rahul Desai</h6>
+                  <p>Import-export student, Pune</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Real outcomes from real exporters End -->
+
+    <!-- FAQ Start -->
+    <div class="newfaqsec">
+      <div class="container">
+        <div class="newfaq-inner">
+          <div class="newfaq-header">
+            <p class="newfaq-eyebrow">Questions, Answered</p>
+            <h2 class="newfaq-heading">Frequently Asked Questions</h2>
+          </div>
+          <div class="newfaq-list">
+            <div class="newfaq-item">
+              <div class="newfaq-question">
+                <span>Do I need prior experience in import-export?</span>
+                <svg class="newfaq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+              <div class="newfaq-answer">No. NavLearn is built for complete beginners — no jargon, no textbooks, just practical steps.</div>
+            </div>
+            <div class="newfaq-item">
+              <div class="newfaq-question">
+                <span>Can I use the tools without taking a course?</span>
+                <svg class="newfaq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+              <div class="newfaq-answer">Yes. NavTools works standalone — no course purchase required to use the 7 tools.</div>
+            </div>
+            <div class="newfaq-item">
+              <div class="newfaq-question">
+                <span>Is the AI Document Checker accurate?</span>
+                <svg class="newfaq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+              <div class="newfaq-answer">It flags mismatches and missing fields with high accuracy, but always do a final manual review before filing.</div>
+            </div>
+            <div class="newfaq-item">
+              <div class="newfaq-question">
+                <span>How long does it take to complete the course?</span>
+                <svg class="newfaq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+              <div class="newfaq-answer">The 8 modules can be completed in a few hours, self-paced.</div>
+            </div>
+            <div class="newfaq-item">
+              <div class="newfaq-question">
+                <span>What is included in the 7 tools?</span>
+                <svg class="newfaq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#054742" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+              <div class="newfaq-answer">HS Code Finder, Import Duty Calculator, CBM Calculator, Shipment Brief, AI Document Checker, Port Comparison, and Container Tracking.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ End -->
+
+    <!-- Call To Action Start -->
+    <div class="call-toaction">
+      <div class="container">
+        <div class="call-toactioninner">
+          <div class="call-toactioncontent">
+            <h3>Ready to Build Your Trade Operation?</h3>
+            <p>Move from scattered learning to structured execution with Navaro.</p>
+            <div class="explorecourse">
+              <a href="/dashboard" class="btn">
+                Get Started</a>
+              <a href="/dashboard" class="btn oulinebtn">Learn about Navaro</a>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Call To Action End -->
+
+    <!-- Footer Start -->
+    <footer class="sitefooter">
+      <div class="footertop">
+        <div class="container">            
+          <div class="row">
+            <div class="col-third">
+              <div class="footerheading">
+                <h4>Quick Links</h4>
+              </div>
+              <div class="uselinks">
+                <ul>
+                  <li>
+                    <a href="/course">
+                      Courses
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 7.92294C17.1196 7.92304 17.2626 7.98229 17.368 8.0877C17.4734 8.1931 17.5326 8.33603 17.5327 8.48509L17.5327 14.8491C17.5354 14.9245 17.5228 14.9998 17.4958 15.0703C17.4687 15.1409 17.4277 15.2052 17.3753 15.2596C17.3228 15.3139 17.2599 15.3571 17.1904 15.3867C17.1209 15.4162 17.0461 15.4314 16.9706 15.4314C16.895 15.4314 16.8203 15.4162 16.7507 15.3867C16.6812 15.3571 16.6183 15.3139 16.5659 15.2596C16.5134 15.2052 16.4724 15.1409 16.4454 15.0703C16.4183 14.9998 16.4058 14.9245 16.4084 14.8491L16.4084 9.84274L8.88304 17.3681C8.77755 17.4736 8.63447 17.5329 8.48529 17.5329C8.33611 17.5329 8.19303 17.4736 8.08754 17.3681C7.98205 17.2626 7.92279 17.1196 7.92279 16.9704C7.92279 16.8212 7.98205 16.6781 8.08754 16.5726L15.6129 9.04724L10.6066 9.04724C10.5311 9.04991 10.4559 9.03734 10.3853 9.01029C10.3148 8.98324 10.2504 8.94226 10.1961 8.8898C10.1418 8.83733 10.0985 8.77446 10.069 8.70493C10.0395 8.6354 10.0243 8.56063 10.0243 8.48509C10.0243 8.40955 10.0395 8.33479 10.069 8.26526C10.0985 8.19573 10.1418 8.13286 10.1961 8.08039C10.2504 8.02793 10.3148 7.98695 10.3853 7.9599C10.4559 7.93285 10.5311 7.92028 10.6066 7.92294L16.9706 7.92294Z" fill="#054742"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/dashboard">
+                      Tools
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 7.92294C17.1196 7.92304 17.2626 7.98229 17.368 8.0877C17.4734 8.1931 17.5326 8.33603 17.5327 8.48509L17.5327 14.8491C17.5354 14.9245 17.5228 14.9998 17.4958 15.0703C17.4687 15.1409 17.4277 15.2052 17.3753 15.2596C17.3228 15.3139 17.2599 15.3571 17.1904 15.3867C17.1209 15.4162 17.0461 15.4314 16.9706 15.4314C16.895 15.4314 16.8203 15.4162 16.7507 15.3867C16.6812 15.3571 16.6183 15.3139 16.5659 15.2596C16.5134 15.2052 16.4724 15.1409 16.4454 15.0703C16.4183 14.9998 16.4058 14.9245 16.4084 14.8491L16.4084 9.84274L8.88304 17.3681C8.77755 17.4736 8.63447 17.5329 8.48529 17.5329C8.33611 17.5329 8.19303 17.4736 8.08754 17.3681C7.98205 17.2626 7.92279 17.1196 7.92279 16.9704C7.92279 16.8212 7.98205 16.6781 8.08754 16.5726L15.6129 9.04724L10.6066 9.04724C10.5311 9.04991 10.4559 9.03734 10.3853 9.01029C10.3148 8.98324 10.2504 8.94226 10.1961 8.8898C10.1418 8.83733 10.0985 8.77446 10.069 8.70493C10.0395 8.6354 10.0243 8.56063 10.0243 8.48509C10.0243 8.40955 10.0395 8.33479 10.069 8.26526C10.0985 8.19573 10.1418 8.13286 10.1961 8.08039C10.2504 8.02793 10.3148 7.98695 10.3853 7.9599C10.4559 7.93285 10.5311 7.92028 10.6066 7.92294L16.9706 7.92294Z" fill="#054742"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about">
+                      About
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 7.92294C17.1196 7.92304 17.2626 7.98229 17.368 8.0877C17.4734 8.1931 17.5326 8.33603 17.5327 8.48509L17.5327 14.8491C17.5354 14.9245 17.5228 14.9998 17.4958 15.0703C17.4687 15.1409 17.4277 15.2052 17.3753 15.2596C17.3228 15.3139 17.2599 15.3571 17.1904 15.3867C17.1209 15.4162 17.0461 15.4314 16.9706 15.4314C16.895 15.4314 16.8203 15.4162 16.7507 15.3867C16.6812 15.3571 16.6183 15.3139 16.5659 15.2596C16.5134 15.2052 16.4724 15.1409 16.4454 15.0703C16.4183 14.9998 16.4058 14.9245 16.4084 14.8491L16.4084 9.84274L8.88304 17.3681C8.77755 17.4736 8.63447 17.5329 8.48529 17.5329C8.33611 17.5329 8.19303 17.4736 8.08754 17.3681C7.98205 17.2626 7.92279 17.1196 7.92279 16.9704C7.92279 16.8212 7.98205 16.6781 8.08754 16.5726L15.6129 9.04724L10.6066 9.04724C10.5311 9.04991 10.4559 9.03734 10.3853 9.01029C10.3148 8.98324 10.2504 8.94226 10.1961 8.8898C10.1418 8.83733 10.0985 8.77446 10.069 8.70493C10.0395 8.6354 10.0243 8.56063 10.0243 8.48509C10.0243 8.40955 10.0395 8.33479 10.069 8.26526C10.0985 8.19573 10.1418 8.13286 10.1961 8.08039C10.2504 8.02793 10.3148 7.98695 10.3853 7.9599C10.4559 7.93285 10.5311 7.92028 10.6066 7.92294L16.9706 7.92294Z" fill="#054742"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contact">
+                      Contact Us
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 7.92294C17.1196 7.92304 17.2626 7.98229 17.368 8.0877C17.4734 8.1931 17.5326 8.33603 17.5327 8.48509L17.5327 14.8491C17.5354 14.9245 17.5228 14.9998 17.4958 15.0703C17.4687 15.1409 17.4277 15.2052 17.3753 15.2596C17.3228 15.3139 17.2599 15.3571 17.1904 15.3867C17.1209 15.4162 17.0461 15.4314 16.9706 15.4314C16.895 15.4314 16.8203 15.4162 16.7507 15.3867C16.6812 15.3571 16.6183 15.3139 16.5659 15.2596C16.5134 15.2052 16.4724 15.1409 16.4454 15.0703C16.4183 14.9998 16.4058 14.9245 16.4084 14.8491L16.4084 9.84274L8.88304 17.3681C8.77755 17.4736 8.63447 17.5329 8.48529 17.5329C8.33611 17.5329 8.19303 17.4736 8.08754 17.3681C7.98205 17.2626 7.92279 17.1196 7.92279 16.9704C7.92279 16.8212 7.98205 16.6781 8.08754 16.5726L15.6129 9.04724L10.6066 9.04724C10.5311 9.04991 10.4559 9.03734 10.3853 9.01029C10.3148 8.98324 10.2504 8.94226 10.1961 8.8898C10.1418 8.83733 10.0985 8.77446 10.069 8.70493C10.0395 8.6354 10.0243 8.56063 10.0243 8.48509C10.0243 8.40955 10.0395 8.33479 10.069 8.26526C10.0985 8.19573 10.1418 8.13286 10.1961 8.08039C10.2504 8.02793 10.3148 7.98695 10.3853 7.9599C10.4559 7.93285 10.5311 7.92028 10.6066 7.92294L16.9706 7.92294Z" fill="#054742"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-third">
+              <div class="footerheading">
+                <h4>CONNECT</h4>
+              </div>
+              <div class="uselinks">
+                <ul>
+                  <li>
+                    <a href="/">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z" stroke="#747474" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z" stroke="#747474" stroke-width="1.5"/>
+                      <path d="M17.5 6.50905L17.51 6.49805" stroke="#747474" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Instagram
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 7.92294C17.1196 7.92304 17.2626 7.98229 17.368 8.0877C17.4734 8.1931 17.5326 8.33603 17.5327 8.48509L17.5327 14.8491C17.5354 14.9245 17.5228 14.9998 17.4958 15.0703C17.4687 15.1409 17.4277 15.2052 17.3753 15.2596C17.3228 15.3139 17.2599 15.3571 17.1904 15.3867C17.1209 15.4162 17.0461 15.4314 16.9706 15.4314C16.895 15.4314 16.8203 15.4162 16.7507 15.3867C16.6812 15.3571 16.6183 15.3139 16.5659 15.2596C16.5134 15.2052 16.4724 15.1409 16.4454 15.0703C16.4183 14.9998 16.4058 14.9245 16.4084 14.8491L16.4084 9.84274L8.88304 17.3681C8.77755 17.4736 8.63447 17.5329 8.48529 17.5329C8.33611 17.5329 8.19303 17.4736 8.08754 17.3681C7.98205 17.2626 7.92279 17.1196 7.92279 16.9704C7.92279 16.8212 7.98205 16.6781 8.08754 16.5726L15.6129 9.04724L10.6066 9.04724C10.5311 9.04991 10.4559 9.03734 10.3853 9.01029C10.3148 8.98324 10.2504 8.94226 10.1961 8.8898C10.1418 8.83733 10.0985 8.77446 10.069 8.70493C10.0395 8.6354 10.0243 8.56063 10.0243 8.48509C10.0243 8.40955 10.0395 8.33479 10.069 8.26526C10.0985 8.19573 10.1418 8.13286 10.1961 8.08039C10.2504 8.02793 10.3148 7.98695 10.3853 7.9599C10.4559 7.93285 10.5311 7.92028 10.6066 7.92294L16.9706 7.92294Z" fill="#054742"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_558_935)">
+                          <path d="M6.12698 3.02942C6.13163 3.6222 5.90278 4.19298 5.48991 4.61836C5.07705 5.04374 4.51334 5.28952 3.92069 5.30256C3.32928 5.28108 2.76874 5.03318 2.35492 4.61012C1.94111 4.18705 1.70567 3.62116 1.69727 3.02942C1.72282 2.45274 1.96682 1.90739 2.37974 1.50402C2.79266 1.10065 3.34358 0.86948 3.92069 0.857422C4.49611 0.869711 5.04507 1.10146 5.45522 1.50523C5.86536 1.90901 6.10568 2.45427 6.12698 3.02942ZM1.93555 9.34142C1.93555 8.03514 2.76698 8.23914 3.92069 8.23914C5.07441 8.23914 5.88869 8.03514 5.88869 9.34142V22.0683C5.88869 23.3917 5.05727 23.1209 3.92069 23.1209C2.78412 23.1209 1.93555 23.3917 1.93555 22.0683V9.34142ZM9.31727 9.34314C9.31727 8.61285 9.58812 8.34028 10.0116 8.25628C10.435 8.17228 11.8973 8.25628 12.4047 8.25628C12.9138 8.25628 13.1178 9.08771 13.1007 9.71514C13.5367 9.13142 14.1148 8.66901 14.7801 8.37194C15.4454 8.07487 16.1756 7.95302 16.9013 8.01799C17.614 7.97448 18.3279 8.08136 18.9966 8.3317C19.6653 8.58203 20.2739 8.97023 20.7828 9.47107C21.2917 9.97191 21.6896 10.5742 21.9506 11.2388C22.2116 11.9034 22.3299 12.6155 22.2978 13.3289V22.0169C22.2978 23.3403 21.4836 23.0694 20.3281 23.0694C19.1727 23.0694 18.3601 23.3403 18.3601 22.0169V15.23C18.39 14.8807 18.3444 14.5292 18.2263 14.1991C18.1083 13.8691 17.9206 13.5683 17.676 13.3172C17.4315 13.0661 17.1357 12.8706 16.8089 12.7439C16.482 12.6173 16.1317 12.5624 15.7818 12.5831C15.4333 12.574 15.0868 12.639 14.7652 12.7739C14.4437 12.9088 14.1545 13.1105 13.9169 13.3657C13.6793 13.6208 13.4986 13.9236 13.3868 14.2538C13.2751 14.5841 13.2348 14.9344 13.2687 15.2814V22.0683C13.2687 23.3917 12.4373 23.1209 11.2836 23.1209C10.1298 23.1209 9.31555 23.3917 9.31555 22.0683L9.31727 9.34314Z" stroke="#747474" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_558_935">
+                            <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      LinkedIn
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 7.92294C17.1196 7.92304 17.2626 7.98229 17.368 8.0877C17.4734 8.1931 17.5326 8.33603 17.5327 8.48509L17.5327 14.8491C17.5354 14.9245 17.5228 14.9998 17.4958 15.0703C17.4687 15.1409 17.4277 15.2052 17.3753 15.2596C17.3228 15.3139 17.2599 15.3571 17.1904 15.3867C17.1209 15.4162 17.0461 15.4314 16.9706 15.4314C16.895 15.4314 16.8203 15.4162 16.7507 15.3867C16.6812 15.3571 16.6183 15.3139 16.5659 15.2596C16.5134 15.2052 16.4724 15.1409 16.4454 15.0703C16.4183 14.9998 16.4058 14.9245 16.4084 14.8491L16.4084 9.84274L8.88304 17.3681C8.77755 17.4736 8.63447 17.5329 8.48529 17.5329C8.33611 17.5329 8.19303 17.4736 8.08754 17.3681C7.98205 17.2626 7.92279 17.1196 7.92279 16.9704C7.92279 16.8212 7.98205 16.6781 8.08754 16.5726L15.6129 9.04724L10.6066 9.04724C10.5311 9.04991 10.4559 9.03734 10.3853 9.01029C10.3148 8.98324 10.2504 8.94226 10.1961 8.8898C10.1418 8.83733 10.0985 8.77446 10.069 8.70493C10.0395 8.6354 10.0243 8.56063 10.0243 8.48509C10.0243 8.40955 10.0395 8.33479 10.069 8.26526C10.0985 8.19573 10.1418 8.13286 10.1961 8.08039C10.2504 8.02793 10.3148 7.98695 10.3853 7.9599C10.4559 7.93285 10.5311 7.92028 10.6066 7.92294L16.9706 7.92294Z" fill="#054742"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M14 12L10.5 14V10L14 12Z" fill="#747474" stroke="#747474" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12.7084V11.2924C2 8.39739 2 6.94939 2.905 6.01839C3.811 5.08639 5.237 5.04639 8.088 4.96539C9.438 4.92739 10.818 4.90039 12 4.90039C13.182 4.90039 14.561 4.92739 15.912 4.96539C18.763 5.04639 20.189 5.08639 21.094 6.01839C21.999 6.95039 22 8.39839 22 11.2924V12.7074C22 15.6034 22 17.0504 21.095 17.9824C20.189 18.9134 18.764 18.9544 15.912 19.0344C14.562 19.0734 13.182 19.1004 12 19.1004C10.818 19.1004 9.439 19.0734 8.088 19.0344C5.237 18.9544 3.811 18.9144 2.905 17.9824C1.999 17.0504 2 15.6024 2 12.7084Z" stroke="#747474" stroke-width="1.5"/>
+                      </svg>
+                      Youtube
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9706 7.92294C17.1196 7.92304 17.2626 7.98229 17.368 8.0877C17.4734 8.1931 17.5326 8.33603 17.5327 8.48509L17.5327 14.8491C17.5354 14.9245 17.5228 14.9998 17.4958 15.0703C17.4687 15.1409 17.4277 15.2052 17.3753 15.2596C17.3228 15.3139 17.2599 15.3571 17.1904 15.3867C17.1209 15.4162 17.0461 15.4314 16.9706 15.4314C16.895 15.4314 16.8203 15.4162 16.7507 15.3867C16.6812 15.3571 16.6183 15.3139 16.5659 15.2596C16.5134 15.2052 16.4724 15.1409 16.4454 15.0703C16.4183 14.9998 16.4058 14.9245 16.4084 14.8491L16.4084 9.84274L8.88304 17.3681C8.77755 17.4736 8.63447 17.5329 8.48529 17.5329C8.33611 17.5329 8.19303 17.4736 8.08754 17.3681C7.98205 17.2626 7.92279 17.1196 7.92279 16.9704C7.92279 16.8212 7.98205 16.6781 8.08754 16.5726L15.6129 9.04724L10.6066 9.04724C10.5311 9.04991 10.4559 9.03734 10.3853 9.01029C10.3148 8.98324 10.2504 8.94226 10.1961 8.8898C10.1418 8.83733 10.0985 8.77446 10.069 8.70493C10.0395 8.6354 10.0243 8.56063 10.0243 8.48509C10.0243 8.40955 10.0395 8.33479 10.069 8.26526C10.0985 8.19573 10.1418 8.13286 10.1961 8.08039C10.2504 8.02793 10.3148 7.98695 10.3853 7.9599C10.4559 7.93285 10.5311 7.92028 10.6066 7.92294L16.9706 7.92294Z" fill="#054742"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-third">
+              <div class="footerheading">
+                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+              </div>
+              <div class="newlettersignup">
+                <div class="input">
+                  <input type="text" placeholder="Email">
+                  <div class="buttonwrap">
+                    <a href="/">
+                      <span>
+                        Join
+                      </span>
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M10.5 4.375L16.625 10.5M16.625 10.5L10.5 16.625M16.625 10.5H4.375" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="bottomlogo">
+          <div class="logofooter">
+            <img src="img/footerlogo.png" alt="Logo">
+          </div>
+        </div>
+        <div class="footercopyright">
+          <p><span>Licensed by Navaro</span><a href="">Privacy Policy</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      (function () {
+        if (window.parent === window) return
+        document.addEventListener('click', function (e) {
+          var a = e.target.closest('a[href]')
+          if (!a) return
+          var href = a.getAttribute('href')
+          if (!href || href.charAt(0) !== '/') return
+          e.preventDefault()
+          window.parent.location.href = a.href
+        })
+      })()
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
