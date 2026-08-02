@@ -191,8 +191,8 @@ $('.closemenu').click(function(){
 document.querySelectorAll(".newfaq-question").forEach((q) => {
   q.addEventListener("click", () => {
     const item = q.parentElement;
-    const isOpen = item.classList.contains("open");
-    document.querySelectorAll(".newfaq-item").forEach((el) => el.classList.remove("open"));
-    if (!isOpen) item.classList.add("open");
+    const isActive = item.classList.contains("active");
+    document.querySelectorAll(".newfaq-item").forEach((el) => el.classList.remove("active"));
+    if (!isActive) item.classList.add("active");
   });
 });

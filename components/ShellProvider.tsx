@@ -38,10 +38,6 @@ function ShellInner({ children }: { children: ReactNode }) {
   )
 }
 
-/**
- * Client shell so /dashboard and / (when served by the app) skip global nav without relying
- * on middleware-injected headers (which often do not reach server components).
- */
 export default function ShellProvider({ children }: { children: ReactNode }) {
   return (
     <Suspense

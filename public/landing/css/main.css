@@ -348,6 +348,33 @@ ul {
   align-items: center;
   gap: 12px;
 }
+
+/* 3D Calculator button in header */
+.cbm3d-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #054742;
+  color: #fff;
+  font-family: "TASA Orbiter Deck";
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.cbm3d-btn:hover {
+  background: #076b64;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(5,71,66,0.3);
+}
+.cbm3d-btn span {
+  background: none !important;
+  padding: 0 !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+}
 .login-signup-btn {
   font-family: "TASA Orbiter Deck";
   font-size: 18px;
@@ -759,6 +786,12 @@ span.orange  {
   padding: 90px 0 200px;
   position: relative;
   z-index: 1;
+  background-color: #DCB7EB;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  border-radius: 24px;
 }
 .realcustomersliderinner .cloudsquare {
   position: absolute;
@@ -1200,7 +1233,7 @@ footer .uselinks ul {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    color: rgba(0, 0, 0, 0.80);
+    color: rgba(0, 0, 0, 0.90);
     letter-spacing: -0.96px;
     text-transform: uppercase;
     margin: 16px 0 28px;
@@ -1210,9 +1243,9 @@ footer .uselinks ul {
     font-family: "TASA Orbiter Deck";
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 120%;
-    color: rgba(30, 30, 30, 0.70);
+    color: rgba(0, 0, 0, 0.85);
 }
 
 .stackholderslide .slideinnr 
@@ -1346,6 +1379,76 @@ footer .uselinks ul {
   .card.stackholderslide .slideinnr {
     padding: 0px !important;
   }
+
+/* ── 3 cards flat row with hover shine ── */
+.stackholdersliderdesktop .pin-wrapper {
+  height: auto !important;
+  position: static !important;
+}
+.stackholdersliderdesktop .pin-stager {
+  height: auto !important;
+  position: static !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  padding: 40px 20px !important;
+  overflow: visible !important;
+}
+.stackholdersliderdesktop .card.stackholderslide {
+  position: static !important;
+  width: calc(33.33% - 16px) !important;
+  height: auto !important;
+  min-height: 520px !important;
+  transform: none !important;
+  padding: 0 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  cursor: pointer;
+  overflow: hidden;
+}
+.stackholdersliderdesktop .card.stackholderslide:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18) !important;
+}
+/* preserve original card colours */
+.stackholdersliderdesktop .card-1 { background: #9EE4D7 !important; }
+.stackholdersliderdesktop .card-2 { background: #F9DB5F !important; }
+.stackholdersliderdesktop .card-3 { background: #DCB7EB !important; }
+
+/* card 2 & 3 text — same dark as card 1 */
+.stackholdersliderdesktop .card-2 .topcontent h3,
+.stackholdersliderdesktop .card-3 .topcontent h3 {
+  color: rgba(0, 0, 0, 0.90) !important;
+}
+.stackholdersliderdesktop .card-2 .topcontent p,
+.stackholdersliderdesktop .card-3 .topcontent p {
+  color: rgba(0, 0, 0, 0.85) !important;
+  font-weight: 500 !important;
+}
+.stackholdersliderdesktop .card.stackholderslide .slideinnr {
+  padding: 50px 40px !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  border-radius: 28px !important;
+}
+/* Shine overlay on hover */
+.stackholdersliderdesktop .card.stackholderslide::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+.stackholdersliderdesktop .card.stackholderslide:hover::after {
+  left: 130%;
+}
   .aboutbanner .container {
     position: relative;
   }
@@ -2052,69 +2155,66 @@ footer .uselinks ul {
 
 /* ── FAQ two-column layout matching reference design ── */
 .faqsec { padding: 80px 0; }
-.faq-twocol {
+.newfaqsec { padding: 80px 0; background: #FFFBF3; }
+.newfaq-inner {
   display: flex;
-  gap: 60px;
+  gap: 80px;
   align-items: flex-start;
 }
-.faq-left {
-  flex: 0 0 280px;
+.newfaq-header {
+  flex: 0 0 320px;
   position: sticky;
   top: 100px;
+  padding-right: 20px;
 }
-.faq-overline {
+.newfaq-eyebrow {
   font-family: "TASA Orbiter Deck";
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #666462;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: block;
 }
-.faq-heading {
-  font-family: "TASA Orbiter Display";
-  font-size: 36px;
+.newfaq-heading {
+  font-family: "TASA Orbiter Deck";
+  font-size: 28px;
   font-weight: 700;
   color: #054742;
   line-height: 1.2;
   margin: 0;
   text-transform: none;
   letter-spacing: -0.5px;
+  white-space: nowrap;
 }
-.faq-right { flex: 1; }
-.faq-right .faqitem {
+.newfaq-list { flex: 1; }
+.newfaq-item {
   border-bottom: 1px solid #D1CEC9;
   padding: 0;
 }
-.faq-right .faqitem .question {
-  padding: 18px 0;
+.newfaq-question {
+  padding: 20px 0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.faq-right .faqitem .question h2 {
+.newfaq-question span {
   font-family: "TASA Orbiter Deck";
   font-size: 17px;
   font-weight: 400;
   color: #1E1E1E;
-  margin: 0;
-  text-transform: none;
-  letter-spacing: 0;
 }
-.faq-right .faqitem .question::after {
-  content: "∨";
-  font-size: 16px;
-  color: #666462;
+.newfaq-icon {
   flex-shrink: 0;
   margin-left: 12px;
   transition: transform 0.25s ease;
 }
-.faq-right .faqitem.active .question::after {
+.newfaq-item.active .newfaq-icon {
   transform: rotate(180deg);
 }
-.faq-right .faqitem .answer {
+.newfaq-answer {
   font-family: "TASA Orbiter Deck";
   font-size: 15px;
   color: #444;
@@ -2122,12 +2222,11 @@ footer .uselinks ul {
   padding: 0 0 18px;
   display: none;
 }
-.faq-right .faqitem.active .answer { display: block; }
+.newfaq-item.active .newfaq-answer { display: block; }
 
-/* Mobile FAQ stack */
 @media (max-width: 800px) {
-  .faq-twocol { flex-direction: column; gap: 30px; }
-  .faq-left { position: static; flex: none; }
+  .newfaq-inner { flex-direction: column; gap: 30px; }
+  .newfaq-header { position: static; flex: none; }
 }
 
 /* ── Who Navaro is for — button styles ── */
@@ -2350,7 +2449,10 @@ footer .uselinks ul {
   padding: 60px 0 !important;
 }
 .bannercontent { padding-top: 60px !important; }
-.onesystemtotalheight { height: 0 !important; }
+.onesystemtotalheight { height: 0 !important; display: none !important; }
+.onesystemtotal { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+.onesystemtotal .gradientbox { padding-bottom: 0 !important; }
+.pin-wrap { display: none !important; }
 
 /* ── Review cards — larger text, clamp to 3 lines, expand on click ── */
 .customerslideinner.review-short {
@@ -2447,10 +2549,10 @@ footer .uselinks ul {
 /* ── Reduce gap between hero banner and One Platform section ── */
 .ourstakholderssec {
   margin-top: 0 !important;
-  padding-top: 40px !important;
+  padding-top: 10px !important;
 }
 .mainbanner {
-  padding-bottom: 40px !important;
+  padding-bottom: 10px !important;
 }
 
 /* ── FAQ — truly centred on page ── */
