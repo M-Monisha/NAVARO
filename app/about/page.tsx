@@ -2,11 +2,11 @@
 
 import Link from 'next/link'
 
-// Brand guidelines (TASA Orbiter — same font system as rest of site):
-// Heading    — Medium (500), leading 1.0, Sentence case
-// Subheading — Medium (500), leading 1.0, Sentence case
-// Body       — Light (300),  leading 1.2, Sentence case
-// Eyebrow    — Light (300),  leading 1.2, Sentence case, uppercase tracking
+// Brand guidelines (TASA Orbiter, same font system as rest of site):
+// Heading    - Medium (500), leading 1.0, Sentence case
+// Subheading - Medium (500), leading 1.0, Sentence case
+// Body       - Light (300),  leading 1.2, Sentence case
+// Eyebrow    - Light (300),  leading 1.2, Sentence case, uppercase tracking
 
 const heading    = { fontFamily: '"TASA Orbiter Display", sans-serif', fontWeight: 500, lineHeight: 1.0 }
 const subheading = { fontFamily: '"TASA Orbiter Display", sans-serif', fontWeight: 500, lineHeight: 1.0 }
@@ -17,7 +17,7 @@ const team = [
   {
     name: 'Karan Wadhwa',
     role: 'Co-Founder & CEO',
-    bio: 'Five years in active freight forwarding — on the calls, inside the chaos. He is building the platform he needed on day three. Turning his wounds to wisdom.',
+    bio: 'Five years in active freight forwarding, on the calls, inside the chaos. He is building the platform he needed on day three. Turning his wounds to wisdom.',
     color: '#FBEBA9',
   },
   {
@@ -35,10 +35,10 @@ const team = [
 ]
 
 const beliefs = [
-  { text: "Because we believe in preparation over improvisation — every learning journey walks you through a real shipment, decision by decision, before you ever risk one of your own." },
-  { text: "Because we believe in truth over theory — every piece of trade guidance is validated by Satyendra's twenty-seven years of practice before it reaches you. Nothing recycled. Nothing invented." },
-  { text: "Because we believe in clarity over confusion — most traders don't fail from lack of ambition; they fail from leaks they never saw. Our tools show you the leak before you pour more into the bucket." },
-  { text: "Because we believe no one should stand alone — guidance is built into the platform itself, not sold to you as an afterthought." },
+  { text: "Because we believe in preparation over improvisation: every learning journey walks you through a real shipment, decision by decision, before you ever risk one of your own." },
+  { text: "Because we believe in truth over theory: every piece of trade guidance is validated by Satyendra's twenty-seven years of practice before it reaches you. Nothing recycled. Nothing invented." },
+  { text: "Because we believe in clarity over confusion: most traders don't fail from lack of ambition; they fail from leaks they never saw. Our tools show you the leak before you pour more into the bucket." },
+  { text: "Because we believe no one should stand alone: guidance is built into the platform itself, not sold to you as an afterthought." },
 ]
 
 export default function About() {
@@ -77,7 +77,7 @@ export default function About() {
             </h2>
             <div className="space-y-5 text-[#444] text-base" style={body}>
               <p>
-                Yet the people who move the world are handed five days of training — or even less — and told to figure the rest out. In import-export, confusion isn't an accident, it's the tradition. Accepted for so long that nobody questions it anymore.
+                Yet the people who move the world are handed five days of training, or even less, and told to figure the rest out. In import-export, confusion isn't an accident, it's the tradition. Accepted for so long that nobody questions it anymore.
               </p>
               <p style={{ ...body, fontWeight: 500 }} className="text-[#1E1E1E]">
                 We know, because that's exactly how it started for us.
@@ -142,22 +142,17 @@ export default function About() {
             {team.map((p, i) => (
               <div
                 key={i}
-                className="rounded-3xl p-8 flex flex-col gap-5"
+                className="rounded-3xl p-10 flex flex-col gap-5"
                 style={{
                   backgroundColor: p.color,
                   backgroundImage: 'linear-gradient(rgba(0,0,0,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.07) 1px, transparent 1px)',
                   backgroundSize: '28px 28px',
                 }}
               >
-                <div className="w-14 h-14 rounded-2xl bg-[#054742] flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-xl" style={subheading}>
-                    {p.name.split(' ').map((n: string) => n[0]).slice(0, 2).join('')}
-                  </span>
-                </div>
                 <div>
-                  <h3 className="text-[#054742] text-xl mb-1" style={subheading}>{p.name}</h3>
-                  <p className="text-[#054742]/60 text-xs mb-4" style={eyebrow}>{p.role}</p>
-                  <p className="text-[#333] text-sm" style={body}>{p.bio}</p>
+                  <h3 className="text-[#054742] text-xl mb-2" style={subheading}>{p.name}</h3>
+                  <p className="text-[#054742]/60 text-xs mb-5" style={eyebrow}>{p.role}</p>
+                  <p className="text-[#333] text-sm" style={{ ...body, lineHeight: 1.7 }}>{p.bio}</p>
                 </div>
               </div>
             ))}
@@ -170,7 +165,7 @@ export default function About() {
         <div className="max-w-[860px] mx-auto px-6 text-center">
           <p className="text-[#9EE4D7] text-xs mb-4" style={eyebrow}>What we built</p>
           <h2 className="text-2xl md:text-[34px] text-white mb-4" style={heading}>
-            Navaro — India's trade operating system.
+            Navaro: India's trade operating system.
           </h2>
           <p className="text-[#FFFBF3]/75 text-sm max-w-[520px] mx-auto mb-6" style={body}>
             Learning, tools, AI assistance, and trade finance in one platform: NavLearn, NavTools, NavBot, NavFinance.

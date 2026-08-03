@@ -1229,23 +1229,23 @@ footer .uselinks ul {
 
 .stackholderslide .slideinnr .topcontent h3 {
     font-family: "TASA Orbiter Deck";
-    font-size: 40px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    color: rgba(0, 0, 0, 0.90);
+    color: rgba(0, 0, 0, 0.92);
     letter-spacing: -0.96px;
     text-transform: uppercase;
-    margin: 16px 0 28px;
+    margin: 14px 0 20px;
 }
 
 .stackholderslide .slideinnr .topcontent p {
     font-family: "TASA Orbiter Deck";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.88);
 }
 
 .stackholderslide .slideinnr 
@@ -1392,15 +1392,15 @@ footer .uselinks ul {
   flex-direction: row !important;
   align-items: stretch !important;
   justify-content: center !important;
-  gap: 24px !important;
-  padding: 40px 20px !important;
+  gap: 20px !important;
+  padding: 30px 20px !important;
   overflow: visible !important;
 }
 .stackholdersliderdesktop .card.stackholderslide {
   position: static !important;
-  width: calc(33.33% - 16px) !important;
+  width: calc(33.33% - 14px) !important;
   height: auto !important;
-  min-height: 520px !important;
+  min-height: 420px !important;
   transform: none !important;
   padding: 0 !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
@@ -1408,46 +1408,68 @@ footer .uselinks ul {
   overflow: hidden;
 }
 .stackholdersliderdesktop .card.stackholderslide:hover {
-  transform: translateY(-6px) !important;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.18) !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.15) !important;
 }
 /* preserve original card colours */
 .stackholdersliderdesktop .card-1 { background: #9EE4D7 !important; }
 .stackholdersliderdesktop .card-2 { background: #F9DB5F !important; }
 .stackholdersliderdesktop .card-3 { background: #DCB7EB !important; }
 
-/* card 2 & 3 text — same dark as card 1 */
+/* ALL 3 cards — force identical dark text */
+.stackholdersliderdesktop .card.stackholderslide .topcontent h3 {
+  color: #0a0a0a !important;
+  font-weight: 700 !important;
+}
+.stackholdersliderdesktop .card.stackholderslide .topcontent p {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+}
+.stackholdersliderdesktop .card.stackholderslide .topcontent svg path,
+.stackholdersliderdesktop .card.stackholderslide .topcontent svg polyline,
+.stackholdersliderdesktop .card.stackholderslide .topcontent svg line,
+.stackholdersliderdesktop .card.stackholderslide .topcontent svg rect {
+  stroke: #0a0a0a !important;
+}
+.stackholdersliderdesktop .card.stackholderslide .bottomcontent a {
+  color: #0a0a0a !important;
+  border-color: rgba(0,0,0,0.35) !important;
+  font-weight: 600 !important;
+}
+
+/* card text — dark and bold (kept for specificity) */
 .stackholdersliderdesktop .card-2 .topcontent h3,
 .stackholdersliderdesktop .card-3 .topcontent h3 {
-  color: rgba(0, 0, 0, 0.90) !important;
+  color: #0a0a0a !important;
+  font-weight: 700 !important;
 }
 .stackholdersliderdesktop .card-2 .topcontent p,
 .stackholdersliderdesktop .card-3 .topcontent p {
-  color: rgba(0, 0, 0, 0.85) !important;
-  font-weight: 500 !important;
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
 }
+.stackholdersliderdesktop .card-2 .topcontent svg,
+.stackholdersliderdesktop .card-3 .topcontent svg {
+  opacity: 1 !important;
+}
+.stackholdersliderdesktop .card-2 .bottomcontent a,
+.stackholdersliderdesktop .card-3 .bottomcontent a {
+  color: #0a0a0a !important;
+  border-color: rgba(0,0,0,0.35) !important;
+}
+
 .stackholdersliderdesktop .card.stackholderslide .slideinnr {
-  padding: 50px 40px !important;
+  padding: 36px 32px !important;
   height: 100% !important;
   display: flex !important;
   flex-direction: column !important;
   border-radius: 28px !important;
 }
-/* Shine overlay on hover */
+
+/* Corner-only shine removed */
+.stackholdersliderdesktop .card.stackholderslide::before,
 .stackholdersliderdesktop .card.stackholderslide::after {
-  content: '';
-  position: absolute;
-  top: -60%;
-  left: -60%;
-  width: 60%;
-  height: 200%;
-  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%);
-  transform: skewX(-20deg);
-  transition: left 0.5s ease;
-  pointer-events: none;
-}
-.stackholdersliderdesktop .card.stackholderslide:hover::after {
-  left: 130%;
+  display: none !important;
 }
   .aboutbanner .container {
     position: relative;
@@ -2696,78 +2718,6 @@ footer .uselinks ul {
   min-height: 280px !important;
   max-width: 380px !important;
   margin: 0 auto !important;
-}
-
-
-/* ── New FAQ Section ── */
-.newfaqsec {
-  padding: 60px 0;
-}
-.newfaq-inner {
-  max-width: 780px;
-  margin: 0 auto;
-}
-.newfaq-header {
-  margin-bottom: 40px;
-}
-.newfaq-eyebrow {
-  font-family: "TASA Orbiter Deck";
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #666462;
-  margin: 0 0 10px;
-}
-.newfaq-heading {
-  font-family: "TASA Orbiter Display";
-  font-size: 38px;
-  font-weight: 700;
-  color: #054742;
-  margin: 0;
-  letter-spacing: -0.5px;
-  line-height: 1.15;
-  text-transform: none;
-}
-.newfaq-item {
-  border-bottom: 1px solid #D1CEC9;
-}
-.newfaq-item:first-child {
-  border-top: 1px solid #D1CEC9;
-}
-.newfaq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  cursor: pointer;
-  gap: 16px;
-}
-.newfaq-question span {
-  font-family: "TASA Orbiter Deck";
-  font-size: 17px;
-  font-weight: 400;
-  color: #1E1E1E;
-  line-height: 1.4;
-}
-.newfaq-icon {
-  flex-shrink: 0;
-  transition: transform 0.25s ease;
-}
-.newfaq-item.open .newfaq-icon {
-  transform: rotate(180deg);
-}
-.newfaq-answer {
-  display: none;
-  font-family: "TASA Orbiter Deck";
-  font-size: 15px;
-  font-weight: 400;
-  color: #444;
-  line-height: 1.7;
-  padding: 0 0 20px;
-}
-.newfaq-item.open .newfaq-answer {
-  display: block;
 }
 
 
