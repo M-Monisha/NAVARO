@@ -106,7 +106,7 @@ export default function About() {
                 In this industry, the difference between sinking and sailing has always been whether someone experienced was standing next to you. Guidance shouldn&apos;t depend on luck.
               </p>
               <p className="text-white text-lg" style={{ ...body, fontWeight: 500 }}>
-                In your story, we play Satyendra's role.
+                In your story, we play Satyendra&apos;s role.
               </p>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function About() {
         <div className="max-w-[860px] mx-auto px-6 text-center">
           <p className="text-[#9EE4D7] text-xs mb-4" style={eyebrow}>What we built</p>
           <h2 className="text-2xl md:text-[34px] text-white mb-4" style={heading}>
-            Navaro: India's trade operating system.
+            Navaro: India&apos;s trade operating system.
           </h2>
           <p className="text-[#FFFBF3]/75 text-sm max-w-[520px] mx-auto mb-6" style={body}>
             Learning, tools, AI assistance, and trade finance in one platform: NavLearn, NavTools, NavBot, NavFinance.
