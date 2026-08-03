@@ -36,8 +36,8 @@ const team = [
 
 const beliefs = [
   { text: "Because we believe in preparation over improvisation: every learning journey walks you through a real shipment, decision by decision, before you ever risk one of your own." },
-  { text: "Because we believe in truth over theory: every piece of trade guidance is validated by Satyendra's twenty-seven years of practice before it reaches you. Nothing recycled. Nothing invented." },
-  { text: "Because we believe in clarity over confusion: most traders don't fail from lack of ambition; they fail from leaks they never saw. Our tools show you the leak before you pour more into the bucket." },
+  { text: "Because we believe in truth over theory: every piece of trade guidance is validated by Satyendra&apos;s twenty-seven years of practice before it reaches you. Nothing recycled. Nothing invented." },
+  { text: "Because we believe in clarity over confusion: most traders don&apos;t fail from lack of ambition; they fail from leaks they never saw. Our tools show you the leak before you pour more into the bucket." },
   { text: "Because we believe no one should stand alone: guidance is built into the platform itself, not sold to you as an afterthought." },
 ]
 
@@ -77,10 +77,10 @@ export default function About() {
             </h2>
             <div className="space-y-5 text-[#444] text-base" style={body}>
               <p>
-                Yet the people who move the world are handed five days of training, or even less, and told to figure the rest out. In import-export, confusion isn't an accident, it's the tradition. Accepted for so long that nobody questions it anymore.
+                Yet the people who move the world are handed five days of training, or even less, and told to figure the rest out. In import-export, confusion isn&apos;t an accident, it&apos;s the tradition. Accepted for so long that nobody questions it anymore.
               </p>
               <p style={{ ...body, fontWeight: 500 }} className="text-[#1E1E1E]">
-                We know, because that's exactly how it started for us.
+                We know, because that&apos;s exactly how it started for us.
               </p>
             </div>
           </div>
@@ -97,13 +97,13 @@ export default function About() {
                 Two days into his first freight forwarding role, during COVID, Karan watched a container he had sold at $3,000 spike to $6,500 overnight. No warning. No playbook.
               </p>
               <p>
-                What saved him wasn't a manual or a course. It was a person: <span style={{ ...body, fontWeight: 500 }}>Satyendra</span>, his senior colleague, twenty-seven years deep in the trade, who stepped in and guided him through.
+                What saved him wasn&apos;t a manual or a course. It was a person: <span style={{ ...body, fontWeight: 500 }}>Satyendra</span>, his senior colleague, twenty-seven years deep in the trade, who stepped in and guided him through.
               </p>
               <p className="text-[#9EE4D7] text-xl md:text-2xl" style={subheading}>
                 That moment is the entire idea of Navaro.
               </p>
               <p>
-                In this industry, the difference between sinking and sailing has always been whether someone experienced was standing next to you. Guidance shouldn't depend on luck.
+                In this industry, the difference between sinking and sailing has always been whether someone experienced was standing next to you. Guidance shouldn&apos;t depend on luck.
               </p>
               <p className="text-white text-lg" style={{ ...body, fontWeight: 500 }}>
                 In your story, we play Satyendra's role.
